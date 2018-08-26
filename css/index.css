@@ -5,8 +5,10 @@
 }
 .center-title {
 	font-size: 100px;
-	margin-top: 40%;
 	color: #505050;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
 
 
 }
