@@ -1,19 +1,22 @@
 // JavaScript Document
-blogPaths = new Array(
-	"../blog/BulkLoad Can not create a path from a null string.md",
-	"../blog/一小时入手ANT脚本.md"
-)
-blogs = new Array(2)
-window.onload=function(){
-	loadBlogs()
-	alert(blogs[0])
-	alert(blogs[1])
-}
+blogMap = new Map()
 
 function loadBlogs() {
+	var blogPrefix = "../blog/"
+	var blogPaths = new Array(
+		"BulkLoad Can not create a path from a null string.md",
+		"一小时入手ANT脚本.md"
+	)
+	
 	for(var i = 0; i < blogPaths.length; i ++) {
-		$.get(blogPaths[i], function(result){
-			blogs[i] = result
+		var blogPath = blogPrefix + blogPaths[i]
+		$.get(blogPath, function(result){
+			blogMap.set(blogPath, result)
 		});
 	}
+}
+
+window.onload=function(){
+	loadBlogs()
+	alert(blogMap.get("BulkLoad Can not create a path from a null string.md"))
 }
