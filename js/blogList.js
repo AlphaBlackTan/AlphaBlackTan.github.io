@@ -13,7 +13,7 @@ function loadBlogs() {
 		"一小时入手ANT脚本.md"
 	)
 	
-	for(var i = 0; i < blogs.length; i ++) {
+	for(var i = 0; i < blogPaths.length; i ++) {
 		var blogPath = blogPrefix + blogs[i]
 		$.get(blogPath, function(result){
 			blogMap.set(blogPath, result)
