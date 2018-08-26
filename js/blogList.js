@@ -29,7 +29,10 @@ function getBlogs(blogPaths) {
 }
 	
 function openBlog(blogPath) {
+	var data;
 	$.get(blogPath, function(result){
-		return result;
+		data = result;
 	});
+	
+	return data;
 }
