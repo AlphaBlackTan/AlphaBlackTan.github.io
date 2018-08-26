@@ -12,7 +12,6 @@ window.onload=function(){
 
 function loadBlogs() {
 	for(var i = 0; i < blogPaths.length; i ++) {
-		var blogPath = blogPrefix + blogPaths[i]
 		$.get(blogPath, function(result){
 			blogs[i1] = result
 		});
