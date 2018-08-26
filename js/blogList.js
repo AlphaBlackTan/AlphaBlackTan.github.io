@@ -1,5 +1,5 @@
 // JavaScript Document
-blogMap = new Map()
+blogMap = new Array()
 window.onload=function(){
 	loadBlogs()
 	alert(blogMap.get("BulkLoad Can not create a path from a null string.md"))
