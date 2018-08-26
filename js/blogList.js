@@ -12,8 +12,8 @@ window.onload=function(){
 
 function loadBlogs() {
 	for(var i = 0; i < blogPaths.length; i ++) {
-		$.get(blogPath, function(result){
-			blogs[i1] = result
+		$.get(blogPaths[i], function(result){
+			blogs[i] = result
 		});
 	}
 }
