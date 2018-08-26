@@ -14,7 +14,7 @@ function loadBlogs() {
 	)
 	
 	for(var i = 0; i < blogPaths.length; i ++) {
-		var blogPath = blogPrefix + blogs[i]
+		var blogPath = blogPrefix + blogPaths[i]
 		$.get(blogPath, function(result){
 			blogMap.set(blogPath, result)
 		});
