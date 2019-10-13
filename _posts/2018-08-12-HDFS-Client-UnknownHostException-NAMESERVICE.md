@@ -1,3 +1,16 @@
+---
+layout: post
+title: "HDFS Client UnknownHostException NAMESERVICE"
+date: 2018-08-12
+categories: 
+- BigData
+tags: 
+- Hadoop
+- HDFS
+- HDFS Client
+- Solution
+---
+
 # 问题现象
 
 HDFS Client抛出如下异常：
