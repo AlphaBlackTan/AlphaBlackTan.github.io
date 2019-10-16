@@ -7,7 +7,7 @@ categories:
 tags: 
 - Spring
 - JAVA
--Spring Boot
+- Spring Boot
 photos:
 - https://alphablacktan.github.io/images/post/spring.jpeg
 ---
