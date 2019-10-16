@@ -20,13 +20,13 @@ photos:
 
 首先我们需要建立一个Maven工程（读者们可以选用自己喜欢的IDE，笔者采用的是IDEA）：
 
-![Maven工程](https://alphablacktan.github.io/images/post/SpringBoot基础工程搭建/1.png)
+![Maven工程](https://alphablacktan.github.io/images/post/1.png)
 
 许多有资深经验的朋友也许会推荐一些Spring Boot的工程构建工具，但笔者认为对于我们这种新手来说，这样反而增大了入门的难度，过大的信息量会让理解变得困难。
 
 然后我们需要为该Maven工程添加Spring Boot所必需的依赖项：
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTEzMjExODI4NzY5?x-oss-process=image/format,png)
+![这里写图片描述](https://alphablacktan.github.io/images/post/2.png)
 
 在入门阶段，笔者认为最简单的就是设置parent为spring-boot-starter-parent，最简化maven的配置，在以后读者们可以随着进一步的深入对依赖进行裁剪或者根据需求进行追加，但笔者认为现在没有必要在此纠结。
 
@@ -34,11 +34,11 @@ photos:
 
 接下来，如果是以前的开发模式，读者们就得开始从事将其部署到服务器上等一系列繁琐的工作。幸运的是SpringBoot提供了这样一个非常便捷的启动器，我们只需要几行代码，便可以让SpringBoot自己跑起来：
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTEzMjEzMDM3MDU0?x-oss-process=image/format,png)
+![这里写图片描述](https://alphablacktan.github.io/images/post/3.png)
 
 此时，虽然基本上还什么都没写，但已经可以让工程跑起来爽一下了：
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTEzMjEzMTQzMDgz?x-oss-process=image/format,png)
+![这里写图片描述](https://alphablacktan.github.io/images/post/4.png)
 
 从日志中，我们大致可以看出来，其实SpringBoot的启动器也是找了个Tomcat进行了一番默认的配置然后启动运作。实际上我们写的启动器类大致就是做了这样一些事情，在此我们没有必要进行深究。
 从上文图中的代码可以看出，该类非常简单，即调用一个启动函数，至于它如何实现的，暂时并不需要关心。同时，可以看见类的头上还有一个奇怪的注解“@SpringBootApplication”，它实际上为“@ComponentScan”，“@Configuration”和“@EnableAutoConfiguration”三个注解的整合。它为我们的工程提供了自动配置和组件扫描的能力。当然，目前我们还完全不需要关注配置（这个能力是SpringBoot比较引以为豪的优势，即大幅简化了开发初期的配置和部署等困难，但笔者认为在大中型项目的开发中后期，这将是个巨坑）。关于其提供的组件扫描功能，我们在下文中便可以进行体验，不得不说这个功能简化了许多无意义的配置。即SpringBoot会自动去寻找我们定义在下级包中的bean组件（说到bean，作为Spring的核心架构，认真解释起来就比较冗长了，在此读者们可以理解为一个任务的执行者。下文中的Controller也是bean的一种）。
@@ -47,11 +47,11 @@ photos:
 
 接下来，我们需要编写传统MVC结构中的Controller，以便让这个Demo具有实际的功能（在此解释一下所谓的Controller，读者可以理解为，当用户通过请求访问后台时，Controller负责对特定的请求进行处理，并返回处理结果）。
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTEzMjEzMjM5MDk1?x-oss-process=image/format,png)
+![这里写图片描述](https://alphablacktan.github.io/images/post/5.png)
 
 这个DemoController类即是一个最简单的Controller类（@Controller注解存在的意义就是向上文中被整合的@ComponentScan注解表明自己的身份，以便自己可以被正确的扫描到），它所承载的功能即是当用户访问http://localhost:8080/（该部分由注解@RequestMapping决定，读者可以根据自己的喜好更换）时便会返回一个程序员的信仰（Hello World!）。
 
-![这里写图片描述](https://imgconvert.csdnimg.cn/aHR0cDovL2ltZy5ibG9nLmNzZG4ubmV0LzIwMTgwMTEzMjEzMzEzMDE4?x-oss-process=image/format,png)
+![这里写图片描述](https://alphablacktan.github.io/images/post/6.png)
 
 如此，一个最为简单的SpringBoot工程变宣告完工了，相信通过这样一个简单的过程，大家已经对SpringBoot擅长做的事情已经有了一个最初步的概念，即请求的处理。对于各个注解的含义以及开发的一些方法，并非本文致力解决的问题，在此变不再花大段的文字进行解释了（在后面的文章中笔者将会对其进行整合）。
 
