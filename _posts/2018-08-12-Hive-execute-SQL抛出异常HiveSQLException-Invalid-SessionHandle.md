@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HDFS Client UnknownHostException NAMESERVICE"
+title: "Hive Execute SQL抛出异常HiveSQLException-Invalid-SessionHandle"
 date: 2018-08-12
 categories: 
 - BigData
