@@ -4,6 +4,7 @@ title: "Spark任务偶现Task卡住很长时间导致Stage整体耗时长"
 date: 2018-08-13
 categories: 
 - BigData
+- Framework
 tags: 
 - Spark
 - Solution

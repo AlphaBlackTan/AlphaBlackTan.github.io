@@ -4,6 +4,7 @@ title: "HDFS No Common protection layer between client and server"
 date: 2018-08-12
 categories: 
 - BigData
+- Framework
 tags: 
 - Hadoop
 - HDFS

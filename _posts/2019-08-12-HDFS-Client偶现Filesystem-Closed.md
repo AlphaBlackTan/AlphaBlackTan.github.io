@@ -4,6 +4,7 @@ title: "HDFS Client偶现Filesystem closed"
 date: 2018-08-11
 categories: 
 - BigData
+- Framework
 tags: 
 - Hadoop
 - HDFS

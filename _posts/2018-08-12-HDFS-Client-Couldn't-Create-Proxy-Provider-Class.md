@@ -4,6 +4,7 @@ title: "HDFS Client couldn't create proxy provider class"
 date: 2018-08-12
 categories: 
 - BigData
+- Framework
 tags: 
 - Hadoop
 - HDFS

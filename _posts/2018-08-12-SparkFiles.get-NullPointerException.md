@@ -4,6 +4,7 @@ title: "SparkFiles.get NullPointerException"
 date: 2018-08-12
 categories: 
 - BigData
+- Framework
 tags: 
 - Spark
 - Solution

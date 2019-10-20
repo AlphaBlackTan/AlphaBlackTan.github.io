@@ -4,6 +4,7 @@ title: "Spark访问安全HBase异常No valid credentials provided"
 date: 2018-08-12
 categories: 
 - BigData
+- Framework
 tags: 
 - Spark
 - Solution

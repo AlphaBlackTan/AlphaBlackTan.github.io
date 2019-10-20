@@ -4,6 +4,7 @@ title: "HBase on Spark NioWorkerPool VerifyError"
 date: 2018-08-12
 categories: 
 - BigData
+- Framework
 tags: 
 - HBase
 - HBase on Spark

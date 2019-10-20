@@ -4,6 +4,7 @@ title: "SpringBoot基础工程搭建"
 date: 2018-01-13
 categories: 
 - Back End
+- Framework
 tags: 
 - Spring
 - JAVA

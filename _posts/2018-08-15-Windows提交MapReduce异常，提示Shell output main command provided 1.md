@@ -4,6 +4,7 @@ title: "Windows提交MapReduce异常，提示Shell output main command provided 
 date: 2018-08-15
 categories: 
 - BigData
+- Framework
 tags: 
 - MapReduce
 - Solution

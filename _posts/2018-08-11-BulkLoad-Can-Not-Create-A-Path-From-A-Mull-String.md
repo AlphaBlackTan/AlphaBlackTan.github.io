@@ -4,6 +4,7 @@ title: "BulkLoad Can not create a path from a null string"
 date: 2018-08-11
 categories: 
 - BigData
+- Framework
 tags: 
 - HBase
 - BulkLoad

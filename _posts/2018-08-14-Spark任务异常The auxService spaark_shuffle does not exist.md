@@ -4,6 +4,7 @@ title: "Spark任务异常The auxService spaark_shuffle does not exist"
 date: 2018-08-14
 categories: 
 - BigData
+- Framework
 tags: 
 - Spark
 - Solution
