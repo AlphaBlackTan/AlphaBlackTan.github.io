@@ -155,7 +155,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/演示图片-player-curved-3.png');
     text-align: center;
     color: white;
     .header-content {
@@ -349,3 +349,7 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.features_pic_size {
+    width: 150px;
+    height: 150px;
+}
