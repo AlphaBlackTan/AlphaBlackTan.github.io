@@ -148,6 +148,7 @@ aside {
 }
 
 .navbar-white {
+    position: sticky;
     background-color: white;
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;

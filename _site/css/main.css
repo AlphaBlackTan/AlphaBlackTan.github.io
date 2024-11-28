@@ -147,6 +147,7 @@ aside {
 }
 
 .navbar-white {
+  position: sticky;
   background-color: white;
   border-color: rgba(34, 34, 34, 0.5);
   font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
