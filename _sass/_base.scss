@@ -147,6 +147,70 @@ aside {
     }
 }
 
+.navbar-white {
+    background-color: white;
+    border-color: rgba($theme-dark, .5);
+    @include sans-serif-font;
+    @include transition-all;
+    .navbar-header .navbar-brand {
+        color: $theme-primary;
+        @include sans-serif-font;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .nav {
+        > li {
+            > a,
+            > a:focus {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 13px;
+                color: $theme-dark;
+                &:hover {
+                    color: $theme-primary;
+                }
+            }
+            &.active {
+                > a,
+                > a:focus {
+                    color: $theme-primary !important;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        background-color: white;
+        border-color: rgba($theme-dark, .5);
+        .navbar-header .navbar-brand {
+            color: $theme-primary;
+            font-size: 14px;
+            &:hover,
+            &:focus {
+                color: darken($theme-primary, 10%);
+            }
+        }
+        .nav > li > a,
+        .nav > li > a:focus {
+            color: $theme-dark;
+            &:hover {
+                color: $theme-primary;
+            }
+        }
+    }
+}
+
+.nav_padding {
+    padding-top: 50px; /* 固顶元素的高度 */
+}
+
 // Homepage Header
 
 header {

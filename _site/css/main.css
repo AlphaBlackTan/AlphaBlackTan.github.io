@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   height: 100%;
@@ -143,6 +144,69 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: rgb(99, 73, 54);
   }
+}
+
+.navbar-white {
+  background-color: white;
+  border-color: rgba(34, 34, 34, 0.5);
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.navbar-white .navbar-header .navbar-brand {
+  color: rgb(99, 73, 54);
+  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-white .navbar-header .navbar-brand:hover, .navbar-white .navbar-header .navbar-brand:focus {
+  color: rgb(66, 48.6666666667, 36);
+}
+.navbar-white .nav > li > a,
+.navbar-white .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  color: #222;
+}
+.navbar-white .nav > li > a:hover,
+.navbar-white .nav > li > a:focus:hover {
+  color: rgb(99, 73, 54);
+}
+.navbar-white .nav > li.active > a,
+.navbar-white .nav > li.active > a:focus {
+  color: rgb(99, 73, 54) !important;
+  background-color: transparent;
+}
+.navbar-white .nav > li.active > a:hover,
+.navbar-white .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-white {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.5);
+  }
+  .navbar-white .navbar-header .navbar-brand {
+    color: rgb(99, 73, 54);
+    font-size: 14px;
+  }
+  .navbar-white .navbar-header .navbar-brand:hover, .navbar-white .navbar-header .navbar-brand:focus {
+    color: rgb(66, 48.6666666667, 36);
+  }
+  .navbar-white .nav > li > a,
+  .navbar-white .nav > li > a:focus {
+    color: #222;
+  }
+  .navbar-white .nav > li > a:hover,
+  .navbar-white .nav > li > a:focus:hover {
+    color: rgb(99, 73, 54);
+  }
+}
+
+.nav_padding {
+  padding-top: 50px; /* 固顶元素的高度 */
 }
 
 header {
